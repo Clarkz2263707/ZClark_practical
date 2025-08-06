@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 9162747877453520439}
   - component: {fileID: 6620653598328440949}
   - component: {fileID: 1018154151161411419}
+  - component: {fileID: 5161379172952130135}
+  - component: {fileID: 6709860661934379849}
+  - component: {fileID: 3767309593242032860}
+  - component: {fileID: -4995605719348505006}
   m_Layer: 0
   m_Name: Capsule Enemy
   m_TagString: Untagged
@@ -110,3 +114,65 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5161379172952130135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548675666946139673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170f991524183814792d7ead5c6115a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+--- !u!114 &6709860661934379849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548675666946139673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd07eabfacef97149a2d794d6eb5b583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 10
+  maxHealth: 10
+  scoreValue: 50
+--- !u!114 &3767309593242032860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548675666946139673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de05ad55a1b9d43498b5fea52b0810fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!195 &-4995605719348505006
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548675666946139673}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
